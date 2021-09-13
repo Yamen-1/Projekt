@@ -1,0 +1,188 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Resturant</title>
+    <style>
+        .flexbox{
+            display:flex;  
+            justify-content:center; 
+            align-items: space-between;
+            flex-direction: row;
+            margin: 30px;
+            text-align: center;
+        
+        }
+        
+            .flex-item-eins{
+            background-color:rgb(142, 195, 203);
+            color: crimson;
+            font-size: 26px;
+            flex:1;
+            text-align: center;
+           
+            
+        }
+
+        .flex-item-zwei{
+            background-color:rgb(142, 195, 203);
+            flex:2;
+            text-align: center;
+           
+        }
+        img{
+            width:70%;
+            height:100%;}
+            
+            .flex-item-drei{
+            flex:1;
+            height: 300px;
+            text-align: center
+            }
+            .img1{
+                width: 90%;
+            height:100%;} 
+            .flex-item-vier{
+                flex: 1;
+                margin:10px 0;
+                padding:15px;
+                background-color: palevioletred;
+                text-align: center;
+            }
+            button{
+            padding:10px;
+            margin:10px;
+            border: 2px solid black;
+            width: 200px;
+            font-size: 24px;
+            font-weight: bold;
+            border-radius:15px;
+            color:rgb(110, 63, 2);
+            background-color:rgb(164, 142, 113)
+            }
+            button:hover{
+             color:burlywood;
+            background-color: rgb(111, 111, 203);
+            border: 1px solid black;
+            }
+            @media (max-width:580px){  
+            .flexbox{
+                flex-direction: column;
+                font-size: 24px;
+            }
+            .flex-item-eins, .flex-item-zwei, .flex-item-drei, .flex-item-vier{
+                width:100%;
+                background-color: lightblue;}
+
+            img{
+                width:50%;
+                height: auto;
+                margin-left:-9px;
+                border: 10px solid green;}
+                .img1{
+                    width:50%;
+                height: auto;
+                margin-left:-9px;
+                border: 10px solid green;
+                }
+            }
+    </style>
+    </head>
+<body>
+    <div class="flexbox"> 
+        <div class="flex-item-eins">
+          <h1> ALi BABA</h1> <br>
+
+          <h2>Durch die Arabische Küche zur Gesundheit</h2>
+          </div>
+        
+        <div class="flex-item-zwei">
+            <img src="/Projekt/gabel-und-loeffel-vorlage-logo_23987-18.jpg">
+        </div>
+    </div>
+    <div class="flexbox">
+        <div class="flex-item-drei">
+            <img class="img1"
+            src="/Projekt/hummus.jpg">
+            </div>
+        <div class="flex-item-drei">
+            <img class="img1" src="/Projekt/fleish.jpg">
+        </div>
+       
+        <div class="flex-item-drei">
+            <img class="img1" src="/Projekt/reis.jpg">
+        </div> 
+        <div class="flex-item-drei">
+            <img class="img1" src="/Projekt/falafel.jpg">
+        </div> 
+    </div>
+    <div class="flexbox"> 
+        <div class="flex-item-eins">
+          <h2>Wir bieten ein gesundes Essen an
+            und eine bequeme Lieferung nach Hause </h2>
+          </div>
+        
+        <div class="flex-item-zwei">
+            <img src="/Projekt/Lieferung.jpg">
+        </div>
+        </div>
+        <div class="flexbox">
+            <div class="flex-item-vier">
+                <button>Home</button>
+                </div>
+            <div class="flex-item-vier">
+            <button>Menu</button>
+            </div>
+           
+            <div class="flex-item-vier">
+                <button>Angebot</button>
+            </div> 
+            <div class="flex-item-vier">
+                <button>Über UNS</button>
+            </div> 
+            </div>
+           <form>
+               <h2>Bestellung</h2>
+               <ul>
+                <li>
+                    <div>
+                        <label>Name</label>
+                        <input type="text">
+                    </div>
+                </li>
+                <li>
+                    <div>
+                        <label>Anschrift</label>
+                        <input type="text">
+                    </div>
+                </li>
+                <li>
+                    <div>
+                        <label>PLZ</label>
+                        <input type="text">
+                        <label>Ort</label>
+                        <input type="text">
+                    </div>
+                </li>
+            </ul>
+            <h3>Art der Bezahlung:</h3> 
+                <select>
+                    <option>Kreditkarte</option>
+                    <option>American Express Card</option>
+                    <option>PayPal</option>
+                </select>
+            </div>
+            <div>
+                <input type="checkbox">
+                <label>Quittung per E-Mail an folgende Adresse:</label>
+                <input type="email" placeholder="...@...">
+            </div>
+           </form>
+    
+
+
+            
+</body>
+</html>
